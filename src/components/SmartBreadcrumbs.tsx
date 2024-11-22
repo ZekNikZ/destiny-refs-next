@@ -1,7 +1,7 @@
-import { Breadcrumbs, Text } from "@mantine/core";
+// import { Breadcrumbs, Text } from "@mantine/core";
 
-import classes from "./SmartBreadcrumbs.module.scss";
-import Link from "next/link";
+// import classes from "./SmartBreadcrumbs.module.scss";
+// import Link from "next/link";
 
 export default function SmartBreadcrumbs() {
   return <div>TODO: FIX</div>;

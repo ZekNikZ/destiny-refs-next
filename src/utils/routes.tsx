@@ -70,6 +70,13 @@ export const activityTypes: {
   },
 ];
 
+export function normalizeActivityName(activity: Activity) {
+  return activity.name
+    .toLowerCase()
+    .replace(/[ .]/g, "-")
+    .replace(/[':\/\u200b]/g, "");
+}
+
 export function makeRouteFromActivity(activity: Activity) {
   const activityType = activityTypes.find((activityType) => activityType.type === activity.type);
   const dashboardPage = activityType?.disableLinks;
@@ -77,7 +84,7 @@ export function makeRouteFromActivity(activity: Activity) {
   if (dashboardPage) {
     return `/info/${activity.type}s`;
   } else {
-    return `/info/${activity.type}s/${activity.name.toLowerCase().replace(/ /g, "-").replace(/'/g, "")}`;
+    return `/info/${activity.type}s/${normalizeActivityName(activity)}`;
   }
 }
 

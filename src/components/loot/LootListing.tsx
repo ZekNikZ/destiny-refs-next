@@ -54,7 +54,7 @@ export default function LootListing(props: Props) {
               {props.loot.adept && (
                 <Tooltip label="Adept weapon: higher stats and access to adept mods">
                   <Group gap={2}>
-                    <Image src="/icons/attributes/enhanced.svg" h={14} w="auto" />
+                    <Image src="/icons/attributes/enhanced.svg" h={14} w="auto" alt="Adept" />
                   </Group>
                 </Tooltip>
               )}
@@ -67,7 +67,7 @@ export default function LootListing(props: Props) {
                   }
                 >
                   <Group gap={2}>
-                    <Image src="/icons/attributes/shaped.svg" h={14} w="auto" />
+                    <Image src="/icons/attributes/shaped.svg" h={14} w="auto" alt="Deepsight" />
                     {/* {props.loot.deepsight === "craftable" ? (
                       <Percent size={16} color="#d25336" weight="bold" />
                     ) : (
@@ -83,6 +83,7 @@ export default function LootListing(props: Props) {
                   src={`https://bungie.net/${staticData?.damageTypes[damageType]?.icon}`}
                   h={16}
                   w="auto"
+                  alt="Damage type"
                 />
               )}
               {ammoType && ammoType !== 0 && (
@@ -90,10 +91,11 @@ export default function LootListing(props: Props) {
                   src={`https://bungie.net/${staticData?.ammoTypes[ammoType]?.icon}`}
                   h={12}
                   w="auto"
+                  alt="Ammo type"
                 />
               )}
               {props.loot.artiface && (
-                <Image src="/icons/attributes/artiface.png" h={16} w="auto" />
+                <Image src="/icons/attributes/artiface.png" h={16} w="auto" alt="Artiface" />
               )}
               <Text>
                 {props.loot.artiface && "Artiface"}{" "}

@@ -1,3 +1,4 @@
+import { normalizeActivityName } from "@/utils/routes";
 import { Activity, SharedLootPools } from "./types";
 
 function recurseAndApplyLootRefs(obj: any, sharedLoot: SharedLootPools): any {
@@ -52,4 +53,11 @@ function recurseAndApplyLootRefs(obj: any, sharedLoot: SharedLootPools): any {
 export function applyLootRefs(json: Activity, sharedLoot: SharedLootPools): Activity {
   const activity: Activity = recurseAndApplyLootRefs(json, sharedLoot);
   return activity;
+}
+
+export function generateActivityMetadata(activity: Activity) {
+  return {
+    ...activity,
+    slug: `${activity.type}s/${normalizeActivityName(activity)}`,
+  };
 }

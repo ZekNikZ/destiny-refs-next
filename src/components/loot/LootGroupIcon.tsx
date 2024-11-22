@@ -30,13 +30,17 @@ export default function LootGroupIcon(props: Props) {
               flexShrink: 0,
             }}
           >
-            <Image src={`/icons/loot/${props.loot.displayStaticIcon ?? "legendary-engram"}.png`} />
+            <Image
+              src={`/icons/loot/${props.loot.displayStaticIcon ?? "legendary-engram"}.png`}
+              alt={props.loot.groupType}
+            />
             {!props.hideArtiface && props.loot.artiface && (
               <Image
                 src="/icons/attributes/artiface.png"
                 h="30%"
                 w="30%"
                 style={{ position: "absolute", right: 2, top: 2 }}
+                alt="Artiface"
               />
             )}
             {!props.hideQuantity && props.loot.quantity && props.loot.quantity > 1 && (

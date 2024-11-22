@@ -46,6 +46,7 @@ export default function TriumphDisplay(props: Props) {
           fallbackSrc="/icons/loot/loading.gif"
           w="50"
           h="50"
+          alt="Triumph Icon"
         />
         <Stack gap="xs">
           <Group>

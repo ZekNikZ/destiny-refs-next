@@ -1,7 +1,6 @@
 import { ActivitiesJson, ActivityJson, LootJson, RotationsJson } from "./json-types";
 import { promises as fs } from "fs";
-import { Activity } from "./types";
-import { applyLootRefs } from "./data-helpers";
+import { applyLootRefs, generateActivityMetadata } from "./data-helpers";
 import { cwd } from "process";
 
 async function readJsonFile<T>(path: string): Promise<T> {
@@ -34,7 +33,9 @@ export async function getAllData() {
 
   const activities = await Promise.all(
     activitiesJson.activities.map((id) =>
-      getActivity(id).then((json) => applyLootRefs(json.activity, loot.sharedLoot))
+      getActivity(id)
+        .then((json) => applyLootRefs(json.activity, loot.sharedLoot))
+        .then(generateActivityMetadata)
     )
   );
 

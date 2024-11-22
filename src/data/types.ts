@@ -39,6 +39,9 @@ export interface Activity {
   extraSections?: Section[];
 
   encounters?: Activity[];
+
+  // Metadata
+  slug: string;
 }
 
 export interface ActivityAvailability {
