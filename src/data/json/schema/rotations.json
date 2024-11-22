@@ -1,0 +1,393 @@
+{
+  "$ref": "#/definitions/RotationsJson",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "ActivityRotation": {
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "activityType": {
+              "$ref": "#/definitions/ActivityType"
+            },
+            "id": {
+              "type": "string"
+            },
+            "lootRotation": {
+              "items": {
+                "items": {
+                  "$ref": "#/definitions/Loot"
+                },
+                "type": "array"
+              },
+              "type": "array"
+            },
+            "name": {
+              "type": "string"
+            },
+            "rotation": {
+              "items": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "type": "array"
+            },
+            "rotationLimit": {
+              "enum": [
+                "infinite",
+                "limited"
+              ],
+              "type": "string"
+            },
+            "startDate": {
+              "type": "string"
+            },
+            "type": {
+              "enum": [
+                "weekly",
+                "daily"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "type",
+            "rotationLimit",
+            "activityType",
+            "startDate",
+            "rotation"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "activityId": {
+              "type": "string"
+            },
+            "activityType": {
+              "$ref": "#/definitions/ActivityType"
+            },
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "type": {
+              "const": "newest",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "type",
+            "activityType",
+            "activityId"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "activityId": {
+              "type": "string"
+            },
+            "activityType": {
+              "$ref": "#/definitions/ActivityType"
+            },
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "rotation": {
+              "items": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "type": "array"
+            },
+            "type": {
+              "const": "special",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "type",
+            "activityType",
+            "activityId",
+            "rotation"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "ActivityType": {
+      "enum": [
+        "raid",
+        "dungeon",
+        "nightfall",
+        "exotic_mission",
+        "lost_sector",
+        "encounter",
+        "opening-encounter"
+      ],
+      "type": "string"
+    },
+    "ChallengeRotation": {
+      "additionalProperties": false,
+      "properties": {
+        "activityType": {
+          "$ref": "#/definitions/ActivityType"
+        },
+        "id": {
+          "type": "string"
+        },
+        "parentActivityId": {
+          "type": "string"
+        },
+        "rotation": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "startDate": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "activityType",
+        "parentActivityId",
+        "startDate",
+        "rotation"
+      ],
+      "type": "object"
+    },
+    "Loot": {
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "adept": {
+              "type": "boolean"
+            },
+            "artiface": {
+              "type": "boolean"
+            },
+            "deepsight": {
+              "enum": [
+                "craftable",
+                "guaranteed-deepsight"
+              ],
+              "type": "string"
+            },
+            "itemHash": {
+              "type": "number"
+            },
+            "quantity": {
+              "type": "number"
+            },
+            "statFocused": {
+              "type": "boolean"
+            },
+            "type": {
+              "const": "item",
+              "type": "string"
+            }
+          },
+          "required": [
+            "itemHash",
+            "type"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "adept": {
+              "type": "boolean"
+            },
+            "artiface": {
+              "type": "boolean"
+            },
+            "children": {
+              "items": {
+                "$ref": "#/definitions/Loot"
+              },
+              "type": "array"
+            },
+            "deepsight": {
+              "enum": [
+                "craftable",
+                "guaranteed-deepsight"
+              ],
+              "type": "string"
+            },
+            "displayItemHash": {
+              "type": "number"
+            },
+            "displayStaticIcon": {
+              "enum": [
+                "helmet",
+                "gauntlets",
+                "chest-armor",
+                "leg-armor",
+                "class-item",
+                "weapon",
+                "legendary-engram",
+                "exotic-engram",
+                "bright-engram",
+                "prime-engram"
+              ],
+              "type": "string"
+            },
+            "groupType": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "number"
+            },
+            "statFocused": {
+              "type": "boolean"
+            },
+            "type": {
+              "const": "group",
+              "type": "string"
+            }
+          },
+          "required": [
+            "children",
+            "groupType",
+            "type"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "adept": {
+              "type": "boolean"
+            },
+            "artiface": {
+              "type": "boolean"
+            },
+            "children": {
+              "items": {
+                "$ref": "#/definitions/Loot"
+              },
+              "type": "array"
+            },
+            "deepsight": {
+              "enum": [
+                "craftable",
+                "guaranteed-deepsight"
+              ],
+              "type": "string"
+            },
+            "key": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "number"
+            },
+            "statFocused": {
+              "type": "boolean"
+            },
+            "type": {
+              "const": "ref-loot",
+              "type": "string"
+            }
+          },
+          "required": [
+            "key",
+            "type"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "adept": {
+              "type": "boolean"
+            },
+            "artiface": {
+              "type": "boolean"
+            },
+            "children": {
+              "items": {
+                "$ref": "#/definitions/Loot"
+              },
+              "type": "array"
+            },
+            "deepsight": {
+              "enum": [
+                "craftable",
+                "guaranteed-deepsight"
+              ],
+              "type": "string"
+            },
+            "key": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "number"
+            },
+            "statFocused": {
+              "type": "boolean"
+            },
+            "type": {
+              "const": "ref-loot-set",
+              "type": "string"
+            }
+          },
+          "required": [
+            "key",
+            "type"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "RotationsJson": {
+      "additionalProperties": false,
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "activityRotations": {
+          "items": {
+            "$ref": "#/definitions/ActivityRotation"
+          },
+          "type": "array"
+        },
+        "challengeRotations": {
+          "items": {
+            "$ref": "#/definitions/ChallengeRotation"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "activityRotations",
+        "challengeRotations"
+      ],
+      "type": "object"
+    }
+  }
+}

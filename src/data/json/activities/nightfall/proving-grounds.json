@@ -1,0 +1,10 @@
+{
+  "$schema": "../../schema/activity.json",
+  "activity": {
+    "id": "nightfall-proving-grounds",
+    "type": "nightfall",
+    "name": "Proving Grounds",
+    "backgroundImage": "/images/nightfalls/proving-grounds.avif",
+    "championTypes": ["barrier", "unstoppable"]
+  }
+}

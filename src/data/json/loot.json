@@ -1,0 +1,4442 @@
+{
+  "$schema": "./schema/loot.json",
+  "sharedLoot": {
+    "loot": {
+      "armor-head": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet"
+      },
+      "armor-head-focused": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "helmet"
+      },
+      "armor-arms": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets"
+      },
+      "armor-arms-focused": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "gauntlets"
+      },
+      "armor-chest": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor"
+      },
+      "armor-chest-focused": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "chest-armor"
+      },
+      "armor-legs": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor"
+      },
+      "armor-legs-focused": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "leg-armor"
+      },
+      "armor-class": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item"
+      },
+      "armor-class-focused": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "class-item"
+      },
+      "any-weapon": {
+        "type": "group",
+        "name": "Any Weapon",
+        "groupType": "Weapon",
+        "displayStaticIcon": "weapon"
+      },
+
+      "raid-salvations-edge-head": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 659074261
+          },
+          {
+            "type": "item",
+            "itemHash": 1026610441
+          },
+          {
+            "type": "item",
+            "itemHash": 930168404
+          }
+        ]
+      },
+      "raid-salvations-edge-head-focused": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 659074261
+          },
+          {
+            "type": "item",
+            "itemHash": 1026610441
+          },
+          {
+            "type": "item",
+            "itemHash": 930168404
+          }
+        ]
+      },
+      "raid-salvations-edge-arms": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3629884836
+          },
+          {
+            "type": "item",
+            "itemHash": 2730105984
+          },
+          {
+            "type": "item",
+            "itemHash": 4055964141
+          }
+        ]
+      },
+      "raid-salvations-edge-arms-focused": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3629884836
+          },
+          {
+            "type": "item",
+            "itemHash": 2730105984
+          },
+          {
+            "type": "item",
+            "itemHash": 4055964141
+          }
+        ]
+      },
+      "raid-salvations-edge-chest": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3725435036
+          },
+          {
+            "type": "item",
+            "itemHash": 2256359240
+          },
+          {
+            "type": "item",
+            "itemHash": 1806218131
+          }
+        ]
+      },
+      "raid-salvations-edge-chest-focused": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3725435036
+          },
+          {
+            "type": "item",
+            "itemHash": 2256359240
+          },
+          {
+            "type": "item",
+            "itemHash": 1806218131
+          }
+        ]
+      },
+      "raid-salvations-edge-legs": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1265563470
+          },
+          {
+            "type": "item",
+            "itemHash": 1807926458
+          },
+          {
+            "type": "item",
+            "itemHash": 7338415
+          }
+        ]
+      },
+      "raid-salvations-edge-legs-focused": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1265563470
+          },
+          {
+            "type": "item",
+            "itemHash": 1807926458
+          },
+          {
+            "type": "item",
+            "itemHash": 7338415
+          }
+        ]
+      },
+      "raid-salvations-edge-class": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1140861969
+          },
+          {
+            "type": "item",
+            "itemHash": 87946917
+          },
+          {
+            "type": "item",
+            "itemHash": 141134282
+          }
+        ]
+      },
+      "raid-salvations-edge-class-focused": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1140861969
+          },
+          {
+            "type": "item",
+            "itemHash": 87946917
+          },
+          {
+            "type": "item",
+            "itemHash": 141134282
+          }
+        ]
+      },
+
+      "raid-vow-of-the-disciple-head": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 362541459
+          },
+          {
+            "type": "item",
+            "itemHash": 1649346047
+          },
+          {
+            "type": "item",
+            "itemHash": 2316722050
+          }
+        ]
+      },
+      "raid-vow-of-the-disciple-head-focused": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 362541459
+          },
+          {
+            "type": "item",
+            "itemHash": 1649346047
+          },
+          {
+            "type": "item",
+            "itemHash": 2316722050
+          }
+        ]
+      },
+      "raid-vow-of-the-disciple-arms": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2150515362
+          },
+          {
+            "type": "item",
+            "itemHash": 1583213254
+          },
+          {
+            "type": "item",
+            "itemHash": 1656263403
+          }
+        ]
+      },
+      "raid-vow-of-the-disciple-arms-focused": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2150515362
+          },
+          {
+            "type": "item",
+            "itemHash": 1583213254
+          },
+          {
+            "type": "item",
+            "itemHash": 1656263403
+          }
+        ]
+      },
+      "raid-vow-of-the-disciple-chest": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1627640710
+          },
+          {
+            "type": "item",
+            "itemHash": 3487540074
+          },
+          {
+            "type": "item",
+            "itemHash": 3300312357
+          }
+        ]
+      },
+      "raid-vow-of-the-disciple-chest-focused": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1627640710
+          },
+          {
+            "type": "item",
+            "itemHash": 3487540074
+          },
+          {
+            "type": "item",
+            "itemHash": 3300312357
+          }
+        ]
+      },
+      "raid-vow-of-the-disciple-legs": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 365727964
+          },
+          {
+            "type": "item",
+            "itemHash": 1566699968
+          },
+          {
+            "type": "item",
+            "itemHash": 2748020989
+          }
+        ]
+      },
+      "raid-vow-of-the-disciple-legs-focused": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 365727964
+          },
+          {
+            "type": "item",
+            "itemHash": 1566699968
+          },
+          {
+            "type": "item",
+            "itemHash": 2748020989
+          }
+        ]
+      },
+      "raid-vow-of-the-disciple-class": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2370089583
+          },
+          {
+            "type": "item",
+            "itemHash": 4124357755
+          },
+          {
+            "type": "item",
+            "itemHash": 2422261368
+          }
+        ]
+      },
+      "raid-vow-of-the-disciple-class-focused": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Stat-Focused Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2370089583
+          },
+          {
+            "type": "item",
+            "itemHash": 4124357755
+          },
+          {
+            "type": "item",
+            "itemHash": 2422261368
+          }
+        ]
+      },
+
+      "raid-kings-fall-head": {
+        "type": "ref-loot",
+        "key": "armor-head",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-kings-fall-head"
+          }
+        ]
+      },
+      "raid-kings-fall-head-focused": {
+        "type": "ref-loot",
+        "key": "armor-head-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-kings-fall-head"
+          }
+        ]
+      },
+      "raid-kings-fall-arms": {
+        "type": "ref-loot",
+        "key": "armor-arms",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-kings-fall-arms"
+          }
+        ]
+      },
+      "raid-kings-fall-arms-focused": {
+        "type": "ref-loot",
+        "key": "armor-arms-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-kings-fall-arms"
+          }
+        ]
+      },
+      "raid-kings-fall-chest": {
+        "type": "ref-loot",
+        "key": "armor-chest",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-kings-fall-chest"
+          }
+        ]
+      },
+      "raid-kings-fall-chest-focused": {
+        "type": "ref-loot",
+        "key": "armor-chest-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-kings-fall-chest"
+          }
+        ]
+      },
+      "raid-kings-fall-legs": {
+        "type": "ref-loot",
+        "key": "armor-legs",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-kings-fall-legs"
+          }
+        ]
+      },
+      "raid-kings-fall-legs-focused": {
+        "type": "ref-loot",
+        "key": "armor-legs-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-kings-fall-legs"
+          }
+        ]
+      },
+      "raid-kings-fall-class": {
+        "type": "ref-loot",
+        "key": "armor-class",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-kings-fall-class"
+          }
+        ]
+      },
+      "raid-kings-fall-class-focused": {
+        "type": "ref-loot",
+        "key": "armor-class-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-kings-fall-class"
+          }
+        ]
+      },
+
+      "raid-crotas-end-head": {
+        "type": "ref-loot",
+        "key": "armor-head",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-crotas-end-head"
+          }
+        ]
+      },
+      "raid-crotas-end-head-focused": {
+        "type": "ref-loot",
+        "key": "armor-head-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-crotas-end-head"
+          }
+        ]
+      },
+      "raid-crotas-end-arms": {
+        "type": "ref-loot",
+        "key": "armor-arms",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-crotas-end-arms"
+          }
+        ]
+      },
+      "raid-crotas-end-arms-focused": {
+        "type": "ref-loot",
+        "key": "armor-arms-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-crotas-end-arms"
+          }
+        ]
+      },
+      "raid-crotas-end-chest": {
+        "type": "ref-loot",
+        "key": "armor-chest",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-crotas-end-chest"
+          }
+        ]
+      },
+      "raid-crotas-end-chest-focused": {
+        "type": "ref-loot",
+        "key": "armor-chest-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-crotas-end-chest"
+          }
+        ]
+      },
+      "raid-crotas-end-legs": {
+        "type": "ref-loot",
+        "key": "armor-legs",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-crotas-end-legs"
+          }
+        ]
+      },
+      "raid-crotas-end-legs-focused": {
+        "type": "ref-loot",
+        "key": "armor-legs-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-crotas-end-legs"
+          }
+        ]
+      },
+      "raid-crotas-end-class": {
+        "type": "ref-loot",
+        "key": "armor-class",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-crotas-end-class"
+          }
+        ]
+      },
+      "raid-crotas-end-class-focused": {
+        "type": "ref-loot",
+        "key": "armor-class-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-crotas-end-class"
+          }
+        ]
+      },
+
+      "raid-vault-of-glass-head": {
+        "type": "ref-loot",
+        "key": "armor-head",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-vault-of-glass-head"
+          }
+        ]
+      },
+      "raid-vault-of-glass-head-focused": {
+        "type": "ref-loot",
+        "key": "armor-head-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-vault-of-glass-head"
+          }
+        ]
+      },
+      "raid-vault-of-glass-arms": {
+        "type": "ref-loot",
+        "key": "armor-arms",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-vault-of-glass-arms"
+          }
+        ]
+      },
+      "raid-vault-of-glass-arms-focused": {
+        "type": "ref-loot",
+        "key": "armor-arms-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-vault-of-glass-arms"
+          }
+        ]
+      },
+      "raid-vault-of-glass-chest": {
+        "type": "ref-loot",
+        "key": "armor-chest",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-vault-of-glass-chest"
+          }
+        ]
+      },
+      "raid-vault-of-glass-chest-focused": {
+        "type": "ref-loot",
+        "key": "armor-chest-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-vault-of-glass-chest"
+          }
+        ]
+      },
+      "raid-vault-of-glass-legs": {
+        "type": "ref-loot",
+        "key": "armor-legs",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-vault-of-glass-legs"
+          }
+        ]
+      },
+      "raid-vault-of-glass-legs-focused": {
+        "type": "ref-loot",
+        "key": "armor-legs-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-vault-of-glass-legs"
+          }
+        ]
+      },
+      "raid-vault-of-glass-class": {
+        "type": "ref-loot",
+        "key": "armor-class",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-vault-of-glass-class"
+          }
+        ]
+      },
+      "raid-vault-of-glass-class-focused": {
+        "type": "ref-loot",
+        "key": "armor-class-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-vault-of-glass-class"
+          }
+        ]
+      },
+
+      "raid-root-of-nightmares-head": {
+        "type": "ref-loot",
+        "key": "armor-head",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-root-of-nightmares-head"
+          }
+        ]
+      },
+      "raid-root-of-nightmares-head-focused": {
+        "type": "ref-loot",
+        "key": "armor-head-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-root-of-nightmares-head"
+          }
+        ]
+      },
+      "raid-root-of-nightmares-arms": {
+        "type": "ref-loot",
+        "key": "armor-arms",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-root-of-nightmares-arms"
+          }
+        ]
+      },
+      "raid-root-of-nightmares-arms-focused": {
+        "type": "ref-loot",
+        "key": "armor-arms-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-root-of-nightmares-arms"
+          }
+        ]
+      },
+      "raid-root-of-nightmares-chest": {
+        "type": "ref-loot",
+        "key": "armor-chest",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-root-of-nightmares-chest"
+          }
+        ]
+      },
+      "raid-root-of-nightmares-chest-focused": {
+        "type": "ref-loot",
+        "key": "armor-chest-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-root-of-nightmares-chest"
+          }
+        ]
+      },
+      "raid-root-of-nightmares-legs": {
+        "type": "ref-loot",
+        "key": "armor-legs",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-root-of-nightmares-legs"
+          }
+        ]
+      },
+      "raid-root-of-nightmares-legs-focused": {
+        "type": "ref-loot",
+        "key": "armor-legs-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-root-of-nightmares-legs"
+          }
+        ]
+      },
+      "raid-root-of-nightmares-class": {
+        "type": "ref-loot",
+        "key": "armor-class",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-root-of-nightmares-class"
+          }
+        ]
+      },
+      "raid-root-of-nightmares-class-focused": {
+        "type": "ref-loot",
+        "key": "armor-class-focused",
+        "children": [
+          {
+            "type": "ref-loot-set",
+            "key": "raid-root-of-nightmares-class"
+          }
+        ]
+      },
+
+      "raid-deep-stone-crypt-head": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3015085684
+          },
+          {
+            "type": "item",
+            "itemHash": 893751566
+          },
+          {
+            "type": "item",
+            "itemHash": 1462908657
+          }
+        ]
+      },
+      "raid-deep-stone-crypt-arms": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1887490701
+          },
+          {
+            "type": "item",
+            "itemHash": 2343515647
+          },
+          {
+            "type": "item",
+            "itemHash": 79460168
+          }
+        ]
+      },
+      "raid-deep-stone-crypt-chest": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 751162931
+          },
+          {
+            "type": "item",
+            "itemHash": 4001862073
+          },
+          {
+            "type": "item",
+            "itemHash": 3975122240
+          }
+        ]
+      },
+      "raid-deep-stone-crypt-legs": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2558289743
+          },
+          {
+            "type": "item",
+            "itemHash": 1264765761
+          },
+          {
+            "type": "item",
+            "itemHash": 756445218
+          }
+        ]
+      },
+      "raid-deep-stone-crypt-class": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2956588906
+          },
+          {
+            "type": "item",
+            "itemHash": 1021060724
+          },
+          {
+            "type": "item",
+            "itemHash": 2902277629
+          }
+        ]
+      },
+
+      "raid-garden-of-salvation-head": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 959087754
+          },
+          {
+            "type": "item",
+            "itemHash": 407842012
+          },
+          {
+            "type": "item",
+            "itemHash": 2367878193
+          }
+        ]
+      },
+      "raid-garden-of-salvation-arms": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 964752083
+          },
+          {
+            "type": "item",
+            "itemHash": 1804192853
+          },
+          {
+            "type": "item",
+            "itemHash": 984532872
+          }
+        ]
+      },
+      "raid-garden-of-salvation-chest": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3876398589
+          },
+          {
+            "type": "item",
+            "itemHash": 210208587
+          },
+          {
+            "type": "item",
+            "itemHash": 1789501056
+          }
+        ]
+      },
+      "raid-garden-of-salvation-legs": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 275145509
+          },
+          {
+            "type": "item",
+            "itemHash": 3380315063
+          },
+          {
+            "type": "item",
+            "itemHash": 2085872226
+          }
+        ]
+      },
+      "raid-garden-of-salvation-class": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1043419184
+          },
+          {
+            "type": "item",
+            "itemHash": 2861892194
+          },
+          {
+            "type": "item",
+            "itemHash": 1141217085
+          }
+        ]
+      },
+
+      "dungeon-vespers-host-head": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2244013188
+          },
+          {
+            "type": "item",
+            "itemHash": 283230886
+          },
+          {
+            "type": "item",
+            "itemHash": 1446639859
+          }
+        ]
+      },
+      "dungeon-vespers-host-arms": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1808327005
+          },
+          {
+            "type": "item",
+            "itemHash": 3592158071
+          },
+          {
+            "type": "item",
+            "itemHash": 3234613634
+          }
+        ]
+      },
+      "dungeon-vespers-host-chest": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1615763427
+          },
+          {
+            "type": "item",
+            "itemHash": 2436714433
+          },
+          {
+            "type": "item",
+            "itemHash": 4190676582
+          }
+        ]
+      },
+      "dungeon-vespers-host-legs": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 4132376063
+          },
+          {
+            "type": "item",
+            "itemHash": 1105725465
+          },
+          {
+            "type": "item",
+            "itemHash": 1025368892
+          }
+        ]
+      },
+      "dungeon-vespers-host-class": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 514586330
+          },
+          {
+            "type": "item",
+            "itemHash": 3219219484
+          },
+          {
+            "type": "item",
+            "itemHash": 213803727
+          }
+        ]
+      },
+
+      "dungeon-warlords-ruin-head": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2792429007
+          },
+          {
+            "type": "item",
+            "itemHash": 220527011
+          },
+          {
+            "type": "item",
+            "itemHash": 3007862180
+          }
+        ]
+      },
+      "dungeon-warlords-ruin-arms": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 652593750
+          },
+          {
+            "type": "item",
+            "itemHash": 1316592242
+          },
+          {
+            "type": "item",
+            "itemHash": 2572175997
+          }
+        ]
+      },
+      "dungeon-warlords-ruin-chest": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3788388762
+          },
+          {
+            "type": "item",
+            "itemHash": 1450838966
+          },
+          {
+            "type": "item",
+            "itemHash": 787709443
+          }
+        ]
+      },
+      "dungeon-warlords-ruin-legs": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1864873008
+          },
+          {
+            "type": "item",
+            "itemHash": 1717830540
+          },
+          {
+            "type": "item",
+            "itemHash": 601360799
+          }
+        ]
+      },
+      "dungeon-warlords-ruin-class": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3012281579
+          },
+          {
+            "type": "item",
+            "itemHash": 822042719
+          },
+          {
+            "type": "item",
+            "itemHash": 3981499770
+          }
+        ]
+      },
+
+      "dungeon-ghosts-of-the-deep-head": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2324998093
+          },
+          {
+            "type": "item",
+            "itemHash": 896458489
+          },
+          {
+            "type": "item",
+            "itemHash": 540625098
+          }
+        ]
+      },
+      "dungeon-ghosts-of-the-deep-arms": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2977663932
+          },
+          {
+            "type": "item",
+            "itemHash": 409820272
+          },
+          {
+            "type": "item",
+            "itemHash": 587762963
+          }
+        ]
+      },
+      "dungeon-ghosts-of-the-deep-chest": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2978918436
+          },
+          {
+            "type": "item",
+            "itemHash": 42941848
+          },
+          {
+            "type": "item",
+            "itemHash": 457617725
+          }
+        ]
+      },
+      "dungeon-ghosts-of-the-deep-legs": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2363472582
+          },
+          {
+            "type": "item",
+            "itemHash": 726878794
+          },
+          {
+            "type": "item",
+            "itemHash": 322717029
+          }
+        ]
+      },
+      "dungeon-ghosts-of-the-deep-class": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3722748537
+          },
+          {
+            "type": "item",
+            "itemHash": 2733403573
+          },
+          {
+            "type": "item",
+            "itemHash": 1961182320
+          }
+        ]
+      },
+
+      "dungeon-duality-head": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2610749098
+          },
+          {
+            "type": "item",
+            "itemHash": 3262689948
+          },
+          {
+            "type": "item",
+            "itemHash": 630469185
+          }
+        ]
+      },
+      "dungeon-duality-arms": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2616310259
+          },
+          {
+            "type": "item",
+            "itemHash": 322599957
+          },
+          {
+            "type": "item",
+            "itemHash": 1468388696
+          }
+        ]
+      },
+      "dungeon-duality-chest": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3570529565
+          },
+          {
+            "type": "item",
+            "itemHash": 4289018379
+          },
+          {
+            "type": "item",
+            "itemHash": 561897072
+          }
+        ]
+      },
+      "dungeon-duality-legs": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2351264197
+          },
+          {
+            "type": "item",
+            "itemHash": 2364756343
+          },
+          {
+            "type": "item",
+            "itemHash": 3798520466
+          }
+        ]
+      },
+      "dungeon-duality-class": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 737550160
+          },
+          {
+            "type": "item",
+            "itemHash": 3070295330
+          },
+          {
+            "type": "item",
+            "itemHash": 3742442925
+          }
+        ]
+      },
+
+      "dungeon-spire-of-the-watcher-head": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2599025960
+          },
+          {
+            "type": "item",
+            "itemHash": 2976233114
+          },
+          {
+            "type": "item",
+            "itemHash": 2014814167
+          }
+        ]
+      },
+      "dungeon-spire-of-the-watcher-arms": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1480429241
+          },
+          {
+            "type": "item",
+            "itemHash": 918537443
+          },
+          {
+            "type": "item",
+            "itemHash": 1088225118
+          }
+        ]
+      },
+      "dungeon-spire-of-the-watcher-chest": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3088058655
+          },
+          {
+            "type": "item",
+            "itemHash": 597199405
+          },
+          {
+            "type": "item",
+            "itemHash": 3185363346
+          }
+        ]
+      },
+      "dungeon-spire-of-the-watcher-legs": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 119121067
+          },
+          {
+            "type": "item",
+            "itemHash": 2839517205
+          },
+          {
+            "type": "item",
+            "itemHash": 1932168248
+          }
+        ]
+      },
+      "dungeon-spire-of-the-watcher-class": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 506181038
+          },
+          {
+            "type": "item",
+            "itemHash": 3006077984
+          },
+          {
+            "type": "item",
+            "itemHash": 3780604323
+          }
+        ]
+      },
+
+      "dungeon-grasp-of-avarice-head": {
+        "type": "group",
+        "name": "Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3473581026
+          },
+          {
+            "type": "item",
+            "itemHash": 2744480004
+          },
+          {
+            "type": "item",
+            "itemHash": 1832715465
+          }
+        ]
+      },
+      "dungeon-grasp-of-avarice-arms": {
+        "type": "group",
+        "name": "Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2771648715
+          },
+          {
+            "type": "item",
+            "itemHash": 2308793821
+          },
+          {
+            "type": "item",
+            "itemHash": 3536211008
+          }
+        ]
+      },
+      "dungeon-grasp-of-avarice-chest": {
+        "type": "group",
+        "name": "Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 549825413
+          },
+          {
+            "type": "item",
+            "itemHash": 3587911011
+          },
+          {
+            "type": "item",
+            "itemHash": 2515293448
+          }
+        ]
+      },
+      "dungeon-grasp-of-avarice-legs": {
+        "type": "group",
+        "name": "Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 4287863773
+          },
+          {
+            "type": "item",
+            "itemHash": 337875583
+          },
+          {
+            "type": "item",
+            "itemHash": 2231150714
+          }
+        ]
+      },
+      "dungeon-grasp-of-avarice-class": {
+        "type": "group",
+        "name": "Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3500810712
+          },
+          {
+            "type": "item",
+            "itemHash": 2486733914
+          },
+          {
+            "type": "item",
+            "itemHash": 4217390949
+          }
+        ]
+      },
+
+      "dungeon-prophecy-nine-head": {
+        "type": "group",
+        "name": "CODA Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3976073347
+          },
+          {
+            "type": "item",
+            "itemHash": 3075372781
+          },
+          {
+            "type": "item",
+            "itemHash": 2602907742
+          }
+        ]
+      },
+      "dungeon-prophecy-nine-arms": {
+        "type": "group",
+        "name": "CODA Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 818644818
+          },
+          {
+            "type": "item",
+            "itemHash": 4194072668
+          },
+          {
+            "type": "item",
+            "itemHash": 1406846351
+          }
+        ]
+      },
+      "dungeon-prophecy-nine-chest": {
+        "type": "group",
+        "name": "CODA Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2570653206
+          },
+          {
+            "type": "item",
+            "itemHash": 508076356
+          },
+          {
+            "type": "item",
+            "itemHash": 1652467433
+          }
+        ]
+      },
+      "dungeon-prophecy-nine-legs": {
+        "type": "group",
+        "name": "CODA Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1219883244
+          },
+          {
+            "type": "item",
+            "itemHash": 3155320806
+          },
+          {
+            "type": "item",
+            "itemHash": 2022923313
+          }
+        ]
+      },
+      "dungeon-prophecy-nine-class": {
+        "type": "group",
+        "name": "CODA Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1900280383
+          },
+          {
+            "type": "item",
+            "itemHash": 1717940633
+          },
+          {
+            "type": "item",
+            "itemHash": 2966633380
+          }
+        ]
+      },
+      "dungeon-prophecy-moonfang-head": {
+        "type": "group",
+        "name": "Moonfang-X7 Helmet (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "helmet",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 2234240008
+          },
+          {
+            "type": "item",
+            "itemHash": 2623956730
+          },
+          {
+            "type": "item",
+            "itemHash": 2288398391
+          }
+        ]
+      },
+      "dungeon-prophecy-moonfang-arms": {
+        "type": "group",
+        "name": "Moonfang-X7 Gauntlets (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "gauntlets",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1581574297
+          },
+          {
+            "type": "item",
+            "itemHash": 100226755
+          },
+          {
+            "type": "item",
+            "itemHash": 1361912510
+          }
+        ]
+      },
+      "dungeon-prophecy-moonfang-chest": {
+        "type": "group",
+        "name": "Moonfang-X7 Chest Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "chest-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 1571337215
+          },
+          {
+            "type": "item",
+            "itemHash": 4121885325
+          },
+          {
+            "type": "item",
+            "itemHash": 1658294130
+          }
+        ]
+      },
+      "dungeon-prophecy-moonfang-legs": {
+        "type": "group",
+        "name": "Moonfang-X7 Leg Armor (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "leg-armor",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 178689419
+          },
+          {
+            "type": "item",
+            "itemHash": 2487240821
+          },
+          {
+            "type": "item",
+            "itemHash": 1781294872
+          }
+        ]
+      },
+      "dungeon-prophecy-moonfang-class": {
+        "type": "group",
+        "name": "Moonfang-X7 Class Item (Class-Specific)",
+        "groupType": "Armor",
+        "displayStaticIcon": "class-item",
+        "children": [
+          {
+            "type": "item",
+            "itemHash": 3242850062
+          },
+          {
+            "type": "item",
+            "itemHash": 2701727616
+          },
+          {
+            "type": "item",
+            "itemHash": 2295111683
+          }
+        ]
+      }
+    },
+    "pools": {
+      "raid-spoils-newest": {
+        "type": "pool",
+        "quantity": "all",
+        "showInLootSummary": true,
+        "pinnacleWhen": "never",
+        "weeklyLimit": "infinite_after_first_clear",
+        "doubleLootWhen": "challenge_completion_repeatable",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3702027555,
+            "quantity": 5
+          }
+        ]
+      },
+      "raid-spoils-vogvow": {
+        "type": "pool",
+        "quantity": "all",
+        "pinnacleWhen": "never",
+        "weeklyLimit": "once_per_character",
+        "availableWhen": "challenge_completion",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3702027555,
+            "quantity": 5
+          }
+        ]
+      },
+      "raid-spoils-lwgosdsc": {
+        "type": "pool",
+        "quantity": "all",
+        "pinnacleWhen": "never",
+        "weeklyLimit": "once_per_character",
+        "showInLootSummary": true,
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3702027555,
+            "quantity": 3
+          }
+        ]
+      },
+      "raid-spoils-modern": {
+        "type": "pool",
+        "quantity": "all",
+        "pinnacleWhen": "never",
+        "weeklyLimit": "infinite_after_first_clear",
+        "doubleLootWhen": "challenge_completion",
+        "showInLootSummary": true,
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3702027555,
+            "quantity": 5
+          }
+        ]
+      },
+
+      "raid-loot-modern": {
+        "type": "pool",
+        "quantity": 1,
+        "weeklyLimit": "infinite_when_featured",
+        "doubleLootWhen": "challenge_completion_repeatable"
+      },
+
+      "raid-salvations-edge-adepts": {
+        "type": "pool",
+        "quantity": 1,
+        "pinnacleWhen": "never",
+        "weeklyLimit": "once_per_character",
+        "availableWhen": "challenge_completion",
+        "knockout": true,
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3951511045,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 172461430,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 1039915310,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 3123651616,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 892183998,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 2001697739,
+            "adept": true
+          }
+        ]
+      },
+      "raid-salvations-edge-exotic": {
+        "type": "pool",
+        "quantity": "chance",
+        "showInLootSummary": true,
+        "pinnacleWhen": "never",
+        "weeklyLimit": "once_per_character",
+        "availableWhen": "always",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3284383335
+          }
+        ]
+      },
+
+      "raid-vow-of-the-disciple-adepts": {
+        "type": "pool",
+        "quantity": 1,
+        "pinnacleWhen": "never",
+        "availableWhen": "challenge_completion",
+        "knockout": true,
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 2943293195,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 1941816543,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 1466006054,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 4038592169,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 786352912,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 2886339027,
+            "adept": true
+          }
+        ]
+      },
+      "raid-vow-of-the-disciple-exotic": {
+        "type": "pool",
+        "quantity": "chance",
+        "showInLootSummary": true,
+        "pinnacleWhen": "never",
+        "weeklyLimit": "infinite_when_featured",
+        "availableWhen": "always",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3505113722
+          }
+        ]
+      },
+
+      "raid-kings-fall-adepts": {
+        "type": "pool",
+        "quantity": 1,
+        "pinnacleWhen": "never",
+        "availableWhen": "challenge_completion",
+        "knockout": true,
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3407395594
+          },
+          {
+            "type": "item",
+            "itemHash": 3503019618
+          },
+          {
+            "type": "item",
+            "itemHash": 3904516037
+          },
+          {
+            "type": "item",
+            "itemHash": 291092617
+          },
+          {
+            "type": "item",
+            "itemHash": 1184692845
+          },
+          {
+            "type": "item",
+            "itemHash": 3248429089
+          }
+        ]
+      },
+      "raid-kings-fall-exotic": {
+        "type": "pool",
+        "quantity": "chance",
+        "showInLootSummary": true,
+        "pinnacleWhen": "never",
+        "weeklyLimit": "infinite_when_featured",
+        "availableWhen": "always",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 1802135586
+          }
+        ]
+      },
+
+      "raid-crotas-end-adepts": {
+        "type": "pool",
+        "quantity": 1,
+        "pinnacleWhen": "never",
+        "availableWhen": "challenge_completion",
+        "knockout": true,
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 128782990
+          },
+          {
+            "type": "item",
+            "itemHash": 1239700299
+          },
+          {
+            "type": "item",
+            "itemHash": 3782662983
+          },
+          {
+            "type": "item",
+            "itemHash": 3926103986
+          },
+          {
+            "type": "item",
+            "itemHash": 578105049
+          },
+          {
+            "type": "item",
+            "itemHash": 407511664
+          }
+        ]
+      },
+      "raid-crotas-end-exotic": {
+        "type": "pool",
+        "quantity": "chance",
+        "showInLootSummary": true,
+        "weeklyLimit": "once_ever",
+        "availableWhen": "always",
+        "notes": ["Quest to unlock Nechrochasm. Available on first completion."],
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 4284902391
+          }
+        ]
+      },
+      "raid-crotas-end-oversoul": {
+        "type": "pool",
+        "quantity": "chance",
+        "showInLootSummary": true,
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 1554192272
+          }
+        ]
+      },
+
+      "raid-vault-of-glass-adept": {
+        "type": "pool",
+        "quantity": "all",
+        "pinnacleWhen": "never",
+        "availableWhen": "challenge_completion",
+        "showInLootSummary": true
+      },
+      "raid-vault-of-glass-exotic": {
+        "type": "pool",
+        "quantity": "chance",
+        "showInLootSummary": true,
+        "pinnacleWhen": "never",
+        "weeklyLimit": "infinite_when_featured",
+        "availableWhen": "always",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 4289226715
+          }
+        ]
+      },
+
+      "raid-root-of-nightmares-adepts": {
+        "type": "pool",
+        "quantity": 1,
+        "pinnacleWhen": "never",
+        "availableWhen": "challenge_completion",
+        "knockout": true,
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 342514437,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 1986287028,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 522366885,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 3493494807,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 495442100,
+            "adept": true
+          },
+          {
+            "type": "item",
+            "itemHash": 2890082420,
+            "adept": true
+          }
+        ]
+      },
+      "raid-root-of-nightmares-exotic": {
+        "type": "pool",
+        "quantity": "chance",
+        "showInLootSummary": true,
+        "pinnacleWhen": "never",
+        "weeklyLimit": "infinite_when_featured",
+        "availableWhen": "always",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3371017761
+          }
+        ]
+      },
+
+      "raid-last-wish-encounter": {
+        "type": "pool",
+        "quantity": 1,
+        "weeklyLimit": "infinite_when_featured",
+        "showInLootSummary": true,
+        "loot": [
+          {
+            "type": "ref-loot",
+            "key": "any-weapon",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 3591141932,
+                "deepsight": "craftable"
+              },
+              {
+                "type": "item",
+                "itemHash": 501329015,
+                "deepsight": "craftable"
+              },
+              {
+                "type": "item",
+                "itemHash": 3885259140,
+                "deepsight": "craftable"
+              },
+              {
+                "type": "item",
+                "itemHash": 2884596447,
+                "deepsight": "craftable"
+              },
+              {
+                "type": "item",
+                "itemHash": 424291879,
+                "deepsight": "craftable"
+              },
+              {
+                "type": "item",
+                "itemHash": 3388655311,
+                "deepsight": "craftable"
+              },
+              {
+                "type": "item",
+                "itemHash": 70083888,
+                "deepsight": "craftable"
+              },
+              {
+                "type": "item",
+                "itemHash": 1851777734,
+                "deepsight": "craftable"
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Helmet (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "helmet",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 362541459
+              },
+              {
+                "type": "item",
+                "itemHash": 1649346047
+              },
+              {
+                "type": "item",
+                "itemHash": 2316722050
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Gauntlets (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "gauntlets",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 2150515362
+              },
+              {
+                "type": "item",
+                "itemHash": 1583213254
+              },
+              {
+                "type": "item",
+                "itemHash": 1656263403
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Chest Armor (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "chest-armor",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 1627640710
+              },
+              {
+                "type": "item",
+                "itemHash": 3487540074
+              },
+              {
+                "type": "item",
+                "itemHash": 3300312357
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Leg Armor (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "leg-armor",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 365727964
+              },
+              {
+                "type": "item",
+                "itemHash": 1566699968
+              },
+              {
+                "type": "item",
+                "itemHash": 2748020989
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Class Item (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "class-item",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 2370089583
+              },
+              {
+                "type": "item",
+                "itemHash": 4124357755
+              },
+              {
+                "type": "item",
+                "itemHash": 2422261368
+              }
+            ]
+          }
+        ]
+      },
+      "raid-last-wish-encounter-rare": {
+        "type": "pool",
+        "quantity": "chance",
+        "weeklyLimit": "infinite_when_featured",
+        "showInLootSummary": true,
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 1511214613
+          }
+        ]
+      },
+
+      "dungeon-vespers-host-exotic": {
+        "type": "pool",
+        "quantity": "chance",
+        "showInLootSummary": true,
+        "weeklyLimit": "once_per_character",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 1111334348
+          }
+        ]
+      },
+      "dungeon-warlords-ruin-exotic": {
+        "type": "pool",
+        "quantity": "chance",
+        "showInLootSummary": true,
+        "weeklyLimit": "infinite_when_featured",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3886719505
+          }
+        ]
+      },
+      "dungeon-ghosts-of-the-deep-exotic": {
+        "type": "pool",
+        "quantity": "chance",
+        "showInLootSummary": true,
+        "weeklyLimit": "infinite_when_featured",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 1441805468
+          }
+        ]
+      },
+      "dungeon-duality-exotic": {
+        "type": "pool",
+        "quantity": "chance",
+        "showInLootSummary": true,
+        "weeklyLimit": "infinite_when_featured",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3664831848
+          }
+        ]
+      },
+      "dungeon-spire-of-the-watcher-exotic": {
+        "type": "pool",
+        "quantity": "chance",
+        "showInLootSummary": true,
+        "weeklyLimit": "infinite_when_featured",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 4174431791
+          }
+        ]
+      },
+
+      "dungeon-pit-of-heresy-loot": {
+        "type": "pool",
+        "quantity": 1,
+        "weeklyLimit": "infinite_when_featured",
+        "showInLootSummary": true,
+        "notes": [
+          "**Apostate**, **Blasphemer**, and **Heretic** are only available after consuming a **Hymn of Desecration**."
+        ],
+        "loot": [
+          {
+            "type": "ref-loot",
+            "key": "any-weapon",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 3325778512
+              },
+              {
+                "type": "item",
+                "itemHash": 2723909519
+              },
+              {
+                "type": "item",
+                "itemHash": 2931957300
+              },
+              {
+                "type": "item",
+                "itemHash": 4277547616
+              },
+              {
+                "type": "item",
+                "itemHash": 3924212056
+              },
+              {
+                "type": "item",
+                "itemHash": 3690523502
+              },
+              {
+                "type": "item",
+                "itemHash": 3870811754
+              },
+              {
+                "type": "item",
+                "itemHash": 1016668089
+              },
+              {
+                "type": "item",
+                "itemHash": 208088207
+              },
+              {
+                "type": "item",
+                "itemHash": 1645386487
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "itemHash": 2164448701
+          },
+          {
+            "type": "item",
+            "itemHash": 2782847179
+          },
+          {
+            "type": "item",
+            "itemHash": 3067821200
+          },
+          {
+            "type": "group",
+            "name": "Helmet (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "helmet",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 2813078109
+              },
+              {
+                "type": "item",
+                "itemHash": 1496857121
+              },
+              {
+                "type": "item",
+                "itemHash": 1721938300
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Gauntlets (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "gauntlets",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 1699964364
+              },
+              {
+                "type": "item",
+                "itemHash": 2293199928
+              },
+              {
+                "type": "item",
+                "itemHash": 3118392309
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Chest Armor (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "chest-armor",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 175015316
+              },
+              {
+                "type": "item",
+                "itemHash": 3434445392
+              },
+              {
+                "type": "item",
+                "itemHash": 4235863403
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Leg Armor (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "leg-armor",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 2345799798
+              },
+              {
+                "type": "item",
+                "itemHash": 328467570
+              },
+              {
+                "type": "item",
+                "itemHash": 399547095
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Class Item (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "class-item",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 1343302889
+              },
+              {
+                "type": "item",
+                "itemHash": 2786161293
+              },
+              {
+                "type": "item",
+                "itemHash": 2975563522
+              }
+            ]
+          }
+        ]
+      },
+      "dungeon-pit-of-heresy-loot-final": {
+        "type": "pool",
+        "quantity": 1,
+        "weeklyLimit": "infinite_when_featured",
+        "showInLootSummary": true,
+        "pinnacleWhen": "activity_is_featured",
+        "loot": [
+          {
+            "type": "ref-loot",
+            "key": "any-weapon",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 3325778512
+              },
+              {
+                "type": "item",
+                "itemHash": 2723909519
+              },
+              {
+                "type": "item",
+                "itemHash": 2931957300
+              },
+              {
+                "type": "item",
+                "itemHash": 4277547616
+              },
+              {
+                "type": "item",
+                "itemHash": 3924212056
+              },
+              {
+                "type": "item",
+                "itemHash": 3690523502
+              },
+              {
+                "type": "item",
+                "itemHash": 3870811754
+              },
+              {
+                "type": "item",
+                "itemHash": 1016668089
+              },
+              {
+                "type": "item",
+                "itemHash": 208088207
+              },
+              {
+                "type": "item",
+                "itemHash": 1645386487
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Helmet (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "helmet",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 2813078109
+              },
+              {
+                "type": "item",
+                "itemHash": 1496857121
+              },
+              {
+                "type": "item",
+                "itemHash": 1721938300
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Gauntlets (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "gauntlets",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 1699964364
+              },
+              {
+                "type": "item",
+                "itemHash": 2293199928
+              },
+              {
+                "type": "item",
+                "itemHash": 3118392309
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Chest Armor (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "chest-armor",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 175015316
+              },
+              {
+                "type": "item",
+                "itemHash": 3434445392
+              },
+              {
+                "type": "item",
+                "itemHash": 4235863403
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Leg Armor (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "leg-armor",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 2345799798
+              },
+              {
+                "type": "item",
+                "itemHash": 328467570
+              },
+              {
+                "type": "item",
+                "itemHash": 399547095
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Class Item (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "class-item",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 1343302889
+              },
+              {
+                "type": "item",
+                "itemHash": 2786161293
+              },
+              {
+                "type": "item",
+                "itemHash": 2975563522
+              }
+            ]
+          }
+        ]
+      },
+
+      "dungeon-shattered-throne-loot": {
+        "type": "pool",
+        "quantity": 1,
+        "weeklyLimit": "infinite_when_featured",
+        "showInLootSummary": true,
+        "loot": [
+          {
+            "type": "ref-loot",
+            "key": "any-weapon",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 355922321
+              },
+              {
+                "type": "item",
+                "itemHash": 1874424704
+              },
+              {
+                "type": "item",
+                "itemHash": 250721843
+              },
+              {
+                "type": "item",
+                "itemHash": 871900124
+              },
+              {
+                "type": "item",
+                "itemHash": 2140635451
+              },
+              {
+                "type": "item",
+                "itemHash": 3723679465
+              },
+              {
+                "type": "item",
+                "itemHash": 2465372924
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Helmet (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "helmet",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 2813078109
+              },
+              {
+                "type": "item",
+                "itemHash": 1496857121
+              },
+              {
+                "type": "item",
+                "itemHash": 1721938300
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Gauntlets (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "gauntlets",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 1699964364
+              },
+              {
+                "type": "item",
+                "itemHash": 2293199928
+              },
+              {
+                "type": "item",
+                "itemHash": 3118392309
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Chest Armor (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "chest-armor",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 175015316
+              },
+              {
+                "type": "item",
+                "itemHash": 3434445392
+              },
+              {
+                "type": "item",
+                "itemHash": 4235863403
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Leg Armor (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "leg-armor",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 2345799798
+              },
+              {
+                "type": "item",
+                "itemHash": 328467570
+              },
+              {
+                "type": "item",
+                "itemHash": 399547095
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "name": "Class Item (Class-Specific)",
+            "groupType": "Armor",
+            "displayStaticIcon": "class-item",
+            "children": [
+              {
+                "type": "item",
+                "itemHash": 1343302889
+              },
+              {
+                "type": "item",
+                "itemHash": 2786161293
+              },
+              {
+                "type": "item",
+                "itemHash": 2975563522
+              }
+            ]
+          }
+        ]
+      },
+
+      "exotic_mission-rotator-exotic": {
+        "type": "pool",
+        "quantity": "all",
+        "showInLootSummary": true,
+        "weeklyLimit": "once_ever"
+      },
+      "exotic_mission-rotator-intrinsics": {
+        "type": "pool",
+        "quantity": "all",
+        "knockout": true,
+        "notes": ["Exotic intrinsic upgrades."]
+      },
+      "exotic_mission-rotator-catalysts": {
+        "type": "pool",
+        "quantity": "all",
+        "knockout": true,
+        "notes": ["Exotic catalyst upgrades."]
+      },
+      "exotic_mission-rotator-loot": {
+        "type": "pool",
+        "quantity": 1,
+        "showInLootSummary": true
+      },
+      "exotic_mission-rotator-deepsight-weapons": {
+        "type": "pool",
+        "quantity": 1,
+        "notes": [
+          "Available once per character each week. Normal and Expert modes have separate weekly reward lockouts.",
+          "Will drop a Deepsight weapon that has not yet had its pattern unlocked. If all patterns are unlocked, a random world drop will be dropped instead."
+        ]
+      },
+      "exotic_mission-rotator-armor": {
+        "type": "pool",
+        "quantity": 1,
+        "showInLootSummary": true,
+        "notes": [
+          "Available once per character each week. Normal and Expert modes have separate weekly reward lockouts.",
+          "Will drop an armor piece that has not yet been unlocked in collections for the current class. If all armor pieces are unlocked, a random world drop will be dropped instead."
+        ]
+      },
+      "exotic_mission-rotator-challenge": {
+        "type": "pool",
+        "quantity": 1,
+        "pinnacleWhen": "activity_is_featured",
+        "notes": [
+          "Will drop a Deepsight weapon that has not yet had its pattern unlocked. If all patterns are unlocked, will drop an armor piece that has not yet been unlocked in collections for the current class. If all armor pieces are unlocked, a random world drop will be dropped instead."
+        ]
+      },
+
+      "exotic_mission-static-exotic": {
+        "type": "pool",
+        "quantity": "all",
+        "showInLootSummary": true,
+        "notes": [
+          "Available once per character each week. Normal and Expert modes have separate weekly reward lockouts.",
+          "First ever drop will be Deepsight."
+        ]
+      },
+      "exotic_mission-static-catalyst": {
+        "type": "pool",
+        "quantity": "all",
+        "weeklyLimit": "once_ever",
+        "notes": ["Obtained by completing **Expert** mode."]
+      },
+      "exotic_mission-static-intrinsics": {
+        "type": "pool",
+        "quantity": "all"
+      },
+      "exotic_mission-static-perks": {
+        "type": "pool",
+        "quantity": "all"
+      },
+
+      "exotic_mission-node-ovrd-avalon-exotic": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-exotic",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3118061005,
+            "deepsight": "guaranteed-deepsight"
+          }
+        ]
+      },
+      "exotic_mission-node-ovrd-avalon-intrinsics": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-intrinsics",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 2751656639
+          },
+          {
+            "type": "item",
+            "itemHash": 2898674463
+          },
+          {
+            "type": "item",
+            "itemHash": 2898674462
+          },
+          {
+            "type": "item",
+            "itemHash": 2898674457
+          }
+        ]
+      },
+      "exotic_mission-node-ovrd-avalon-catalysts": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-catalysts",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3146691101
+          },
+          {
+            "type": "item",
+            "itemHash": 3146691100
+          },
+          {
+            "type": "item",
+            "itemHash": 3146691103
+          }
+        ]
+      },
+      "exotic_mission-node-ovrd-avalon-loot": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-loot",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-node-ovrd-avalon-weapons"
+          }
+        ]
+      },
+      "exotic_mission-node-ovrd-avalon-deepsight-weapons": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-deepsight-weapons",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-node-ovrd-avalon-deepsight-weapons",
+            "deepsight": "guaranteed-deepsight"
+          }
+        ]
+      },
+      "exotic_mission-node-ovrd-avalon-armor": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-armor",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-node-ovrd-avalon-armor"
+          }
+        ]
+      },
+
+      "exotic_mission-presage-exotic": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-exotic",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 2188764214,
+            "deepsight": "guaranteed-deepsight"
+          }
+        ]
+      },
+      "exotic_mission-presage-intrinsics": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-intrinsics",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 1319823571
+          },
+          {
+            "type": "item",
+            "itemHash": 1064669307
+          },
+          {
+            "type": "item",
+            "itemHash": 1064669306
+          },
+          {
+            "type": "item",
+            "itemHash": 1064669309
+          }
+        ]
+      },
+      "exotic_mission-presage-catalysts": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-catalysts",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 1301843770
+          }
+        ]
+      },
+      "exotic_mission-presage-loot": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-loot",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-presage-weapons"
+          }
+        ]
+      },
+      "exotic_mission-presage-deepsight-weapons": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-deepsight-weapons",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-presage-deepsight-weapons",
+            "deepsight": "guaranteed-deepsight"
+          }
+        ]
+      },
+      "exotic_mission-presage-armor": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-armor",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-presage-armor"
+          }
+        ]
+      },
+
+      "exotic_mission-starcrossed-exotic": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-exotic",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 2910326942,
+            "deepsight": "guaranteed-deepsight"
+          }
+        ]
+      },
+      "exotic_mission-starcrossed-intrinsics": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-intrinsics",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 214670074
+          },
+          {
+            "type": "item",
+            "itemHash": 2655147894
+          },
+          {
+            "type": "item",
+            "itemHash": 2655147895
+          },
+          {
+            "type": "item",
+            "itemHash": 2655147888
+          }
+        ]
+      },
+      "exotic_mission-starcrossed-catalysts": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-catalysts",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 372672208
+          },
+          {
+            "type": "item",
+            "itemHash": 372672209
+          },
+          {
+            "type": "item",
+            "itemHash": 372672210
+          },
+          {
+            "type": "item",
+            "itemHash": 372672211
+          }
+        ]
+      },
+      "exotic_mission-starcrossed-loot": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-loot",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-starcrossed-weapons"
+          }
+        ]
+      },
+      "exotic_mission-starcrossed-deepsight-weapons": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-deepsight-weapons",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-starcrossed-deepsight-weapons",
+            "deepsight": "guaranteed-deepsight"
+          }
+        ]
+      },
+      "exotic_mission-starcrossed-armor": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-armor",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-starcrossed-armor"
+          }
+        ]
+      },
+
+      "exotic_mission-vox-obscura-exotic": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-exotic",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 46125926,
+            "deepsight": "guaranteed-deepsight"
+          }
+        ]
+      },
+      "exotic_mission-vox-obscura-intrinsics": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-intrinsics",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 4133742355
+          },
+          {
+            "type": "item",
+            "itemHash": 4133742354
+          },
+          {
+            "type": "item",
+            "itemHash": 4133742357
+          }
+        ]
+      },
+      "exotic_mission-vox-obscura-catalysts": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-catalysts",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 2726471870
+          },
+          {
+            "type": "item",
+            "itemHash": 3108830275
+          },
+          {
+            "type": "item",
+            "itemHash": 3523296417
+          }
+        ]
+      },
+      "exotic_mission-vox-obscura-loot": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-loot",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-vox-obscura-weapons"
+          }
+        ]
+      },
+      "exotic_mission-vox-obscura-deepsight-weapons": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-deepsight-weapons",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-vox-obscura-deepsight-weapons",
+            "deepsight": "guaranteed-deepsight"
+          }
+        ]
+      },
+      "exotic_mission-vox-obscura-armor": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-armor",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-vox-obscura-armor"
+          }
+        ]
+      },
+
+      "exotic_mission-operation-seraph-shield-exotic": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-exotic",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 1473821207,
+            "deepsight": "guaranteed-deepsight"
+          }
+        ]
+      },
+      "exotic_mission-operation-seraph-shield-intrinsics": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-intrinsics",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 3834106778
+          },
+          {
+            "type": "item",
+            "itemHash": 891750166
+          },
+          {
+            "type": "item",
+            "itemHash": 891750167
+          },
+          {
+            "type": "item",
+            "itemHash": 891750160
+          }
+        ]
+      },
+      "exotic_mission-operation-seraph-shield-catalysts": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-catalysts",
+        "loot": [
+          {
+            "type": "item",
+            "itemHash": 1266037484
+          },
+          {
+            "type": "item",
+            "itemHash": 1266037485
+          },
+          {
+            "type": "item",
+            "itemHash": 1266037486
+          },
+          {
+            "type": "item",
+            "itemHash": 1266037487
+          }
+        ]
+      },
+      "exotic_mission-operation-seraph-shield-loot": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-loot",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-operation-seraph-shield-weapons"
+          }
+        ]
+      },
+      "exotic_mission-operation-seraph-shield-deepsight-weapons": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-deepsight-weapons",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-operation-seraph-shield-deepsight-weapons",
+            "deepsight": "guaranteed-deepsight"
+          }
+        ]
+      },
+      "exotic_mission-operation-seraph-shield-armor": {
+        "type": "ref-loot-pool",
+        "key": "exotic_mission-rotator-armor",
+        "loot": [
+          {
+            "type": "ref-loot-set",
+            "key": "exotic_mission-operation-seraph-shield-armor"
+          }
+        ]
+      }
+    },
+    "sets": {
+      "exotic_mission-node-ovrd-avalon-weapons": [
+        {
+          "type": "ref-loot-set",
+          "key": "exotic_mission-node-ovrd-avalon-deepsight-weapons",
+          "deepsight": "craftable"
+        }
+      ],
+      "exotic_mission-node-ovrd-avalon-deepsight-weapons": [
+        {
+          "type": "item",
+          "itemHash": 392008588
+        },
+        {
+          "type": "item",
+          "itemHash": 45643573
+        },
+        {
+          "type": "item",
+          "itemHash": 268260372
+        },
+        {
+          "type": "item",
+          "itemHash": 2508948099
+        },
+        {
+          "type": "item",
+          "itemHash": 268260373
+        },
+        {
+          "type": "item",
+          "itemHash": 1720503118
+        }
+      ],
+      "exotic_mission-node-ovrd-avalon-armor": [
+        {
+          "type": "group",
+          "name": "Helmet (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "helmet",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 1089162050
+            },
+            {
+              "type": "item",
+              "itemHash": 2598029856
+            },
+            {
+              "type": "item",
+              "itemHash": 3056490591
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Gauntlets (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "gauntlets",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 428806571
+            },
+            {
+              "type": "item",
+              "itemHash": 164103153
+            },
+            {
+              "type": "item",
+              "itemHash": 3031934630
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Chest Armor (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "chest-armor",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 3312368357
+            },
+            {
+              "type": "item",
+              "itemHash": 3995603239
+            },
+            {
+              "type": "item",
+              "itemHash": 988330314
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Leg Armor (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "leg-armor",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 1903444925
+            },
+            {
+              "type": "item",
+              "itemHash": 4290220099
+            },
+            {
+              "type": "item",
+              "itemHash": 2549387168
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Class Item (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "class-item",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 1968283192
+            },
+            {
+              "type": "item",
+              "itemHash": 840487990
+            },
+            {
+              "type": "item",
+              "itemHash": 1159113819
+            }
+          ]
+        }
+      ],
+
+      "exotic_mission-presage-weapons": [
+        {
+          "type": "ref-loot-set",
+          "key": "exotic_mission-presage-deepsight-weapons",
+          "deepsight": "craftable"
+        }
+      ],
+      "exotic_mission-presage-deepsight-weapons": [
+        {
+          "type": "item",
+          "itemHash": 3055790362
+        },
+        {
+          "type": "item",
+          "itemHash": 3107853529
+        },
+        {
+          "type": "item",
+          "itemHash": 2490988246
+        },
+        {
+          "type": "item",
+          "itemHash": 502356570
+        },
+        {
+          "type": "item",
+          "itemHash": 1959650777
+        },
+        {
+          "type": "item",
+          "itemHash": 2778013407
+        },
+        {
+          "type": "item",
+          "itemHash": 2323544076
+        },
+        {
+          "type": "item",
+          "itemHash": 254636484
+        },
+        {
+          "type": "item",
+          "itemHash": 1366394399
+        },
+        {
+          "type": "item",
+          "itemHash": 1478986057
+        }
+      ],
+      "exotic_mission-presage-armor": [
+        {
+          "type": "group",
+          "name": "Helmet (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "helmet",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 527342912
+            },
+            {
+              "type": "item",
+              "itemHash": 1285042454
+            },
+            {
+              "type": "item",
+              "itemHash": 217647949
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Gauntlets (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "gauntlets",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 2388383505
+            },
+            {
+              "type": "item",
+              "itemHash": 2489136103
+            },
+            {
+              "type": "item",
+              "itemHash": 870313788
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Chest Armor (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "chest-armor",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 2288543943
+            },
+            {
+              "type": "item",
+              "itemHash": 29154321
+            },
+            {
+              "type": "item",
+              "itemHash": 1972851364
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Leg Armor (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "leg-armor",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 1795075811
+            },
+            {
+              "type": "item",
+              "itemHash": 1241941801
+            },
+            {
+              "type": "item",
+              "itemHash": 256122438
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Class Item (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "class-item",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 3004041686
+            },
+            {
+              "type": "item",
+              "itemHash": 2224584236
+            },
+            {
+              "type": "item",
+              "itemHash": 2716681465
+            }
+          ]
+        }
+      ],
+
+      "exotic_mission-starcrossed-weapons": [
+        {
+          "type": "ref-loot-set",
+          "key": "exotic_mission-starcrossed-deepsight-weapons",
+          "deepsight": "craftable"
+        }
+      ],
+      "exotic_mission-starcrossed-deepsight-weapons": [
+        {
+          "type": "item",
+          "itemHash": 2993554824
+        },
+        {
+          "type": "item",
+          "itemHash": 2045811635
+        },
+        {
+          "type": "item",
+          "itemHash": 2817683783
+        },
+        {
+          "type": "item",
+          "itemHash": 1447836603
+        },
+        {
+          "type": "item",
+          "itemHash": 1501688142
+        },
+        {
+          "type": "item",
+          "itemHash": 3710082365
+        },
+        {
+          "type": "item",
+          "itemHash": 2558925366
+        },
+        {
+          "type": "item",
+          "itemHash": 92459755
+        }
+      ],
+      "exotic_mission-starcrossed-armor": [
+        {
+          "type": "group",
+          "name": "Helmet (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "helmet",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 469031127
+            },
+            {
+              "type": "item",
+              "itemHash": 713622571
+            },
+            {
+              "type": "item",
+              "itemHash": 4196904014
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Gauntlets (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "gauntlets",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 3837409374
+            },
+            {
+              "type": "item",
+              "itemHash": 3289270298
+            },
+            {
+              "type": "item",
+              "itemHash": 927140159
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Chest Armor (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "chest-armor",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 3005056146
+            },
+            {
+              "type": "item",
+              "itemHash": 3013248110
+            },
+            {
+              "type": "item",
+              "itemHash": 3400974073
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Leg Armor (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "leg-armor",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 386385208
+            },
+            {
+              "type": "item",
+              "itemHash": 716705876
+            },
+            {
+              "type": "item",
+              "itemHash": 4143357569
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Class Item (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "class-item",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 3600297123
+            },
+            {
+              "type": "item",
+              "itemHash": 3755696951
+            },
+            {
+              "type": "item",
+              "itemHash": 844733364
+            }
+          ]
+        }
+      ],
+
+      "exotic_mission-vox-obscura-weapons": [
+        {
+          "type": "ref-loot-set",
+          "key": "exotic_mission-vox-obscura-deepsight-weapons",
+          "deepsight": "craftable"
+        }
+      ],
+      "exotic_mission-vox-obscura-deepsight-weapons": [
+        {
+          "type": "item",
+          "itemHash": 4096943616
+        },
+        {
+          "type": "item",
+          "itemHash": 2097055732
+        },
+        {
+          "type": "item",
+          "itemHash": 1572896086
+        },
+        {
+          "type": "item",
+          "itemHash": 1248372789
+        },
+        {
+          "type": "item",
+          "itemHash": 4067556514
+        },
+        {
+          "type": "item",
+          "itemHash": 232928045
+        }
+      ],
+      "exotic_mission-vox-obscura-armor": [
+        {
+          "type": "group",
+          "name": "Helmet (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "helmet",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 2240729575
+            },
+            {
+              "type": "item",
+              "itemHash": 2516879931
+            },
+            {
+              "type": "item",
+              "itemHash": 849255710
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Gauntlets (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "gauntlets",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 187431790
+            },
+            {
+              "type": "item",
+              "itemHash": 4017738218
+            },
+            {
+              "type": "item",
+              "itemHash": 119228495
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Chest Armor (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "chest-armor",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 438108034
+            },
+            {
+              "type": "item",
+              "itemHash": 4144240158
+            },
+            {
+              "type": "item",
+              "itemHash": 3465627817
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Leg Armor (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "leg-armor",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 2270509928
+            },
+            {
+              "type": "item",
+              "itemHash": 3056950148
+            },
+            {
+              "type": "item",
+              "itemHash": 693728753
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Class Item (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "class-item",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 3957071315
+            },
+            {
+              "type": "item",
+              "itemHash": 3473867303
+            },
+            {
+              "type": "item",
+              "itemHash": 950963812
+            }
+          ]
+        }
+      ],
+
+      "exotic_mission-operation-seraph-shield-weapons": [
+        {
+          "type": "ref-loot-set",
+          "key": "exotic_mission-operation-seraph-shield-deepsight-weapons",
+          "deepsight": "craftable"
+        }
+      ],
+      "exotic_mission-operation-seraph-shield-deepsight-weapons": [
+        {
+          "type": "item",
+          "itemHash": 1731355324
+        },
+        {
+          "type": "item",
+          "itemHash": 1168625549
+        },
+        {
+          "type": "item",
+          "itemHash": 2302346155
+        },
+        {
+          "type": "item",
+          "itemHash": 2149683300
+        },
+        {
+          "type": "item",
+          "itemHash": 1751893422
+        },
+        {
+          "type": "item",
+          "itemHash": 2272041093
+        },
+        {
+          "type": "item",
+          "itemHash": 2978226043
+        },
+        {
+          "type": "item",
+          "itemHash": 2827764482
+        },
+        {
+          "type": "item",
+          "itemHash": 3103325054
+        },
+        {
+          "type": "item",
+          "itemHash": 3849444474
+        }
+      ],
+      "exotic_mission-operation-seraph-shield-armor": [
+        {
+          "type": "group",
+          "name": "Helmet (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "helmet",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 1059446290
+            },
+            {
+              "type": "item",
+              "itemHash": 648266032
+            },
+            {
+              "type": "item",
+              "itemHash": 2974824815
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Gauntlets (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "gauntlets",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 1525902715
+            },
+            {
+              "type": "item",
+              "itemHash": 446049665
+            },
+            {
+              "type": "item",
+              "itemHash": 1259550198
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Chest Armor (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "chest-armor",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 839296981
+            },
+            {
+              "type": "item",
+              "itemHash": 4116381015
+            },
+            {
+              "type": "item",
+              "itemHash": 2710316218
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Leg Armor (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "leg-armor",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 4270910189
+            },
+            {
+              "type": "item",
+              "itemHash": 1940895219
+            },
+            {
+              "type": "item",
+              "itemHash": 2471829328
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Class Item (Class-Specific)",
+          "groupType": "Armor",
+          "displayStaticIcon": "class-item",
+          "children": [
+            {
+              "type": "item",
+              "itemHash": 4256213288
+            },
+            {
+              "type": "item",
+              "itemHash": 1949733158
+            },
+            {
+              "type": "item",
+              "itemHash": 1934312075
+            }
+          ]
+        }
+      ],
+
+      "raid-kings-fall-head": [
+        {
+          "type": "item",
+          "itemHash": 26254737
+        },
+        {
+          "type": "item",
+          "itemHash": 1656833637
+        },
+        {
+          "type": "item",
+          "itemHash": 1537426592
+        }
+      ],
+      "raid-kings-fall-arms": [
+        {
+          "type": "item",
+          "itemHash": 2937773672
+        },
+        {
+          "type": "item",
+          "itemHash": 2437510452
+        },
+        {
+          "type": "item",
+          "itemHash": 3398467185
+        }
+      ],
+      "raid-kings-fall-chest": [
+        {
+          "type": "item",
+          "itemHash": 1066132704
+        },
+        {
+          "type": "item",
+          "itemHash": 169689932
+        },
+        {
+          "type": "item",
+          "itemHash": 3921733799
+        }
+      ],
+      "raid-kings-fall-legs": [
+        {
+          "type": "item",
+          "itemHash": 4039112898
+        },
+        {
+          "type": "item",
+          "itemHash": 2725249086
+        },
+        {
+          "type": "item",
+          "itemHash": 3229616835
+        }
+      ],
+      "raid-kings-fall-class": [
+        {
+          "type": "item",
+          "itemHash": 376168733
+        },
+        {
+          "type": "item",
+          "itemHash": 2868448385
+        },
+        {
+          "type": "item",
+          "itemHash": 766618550
+        }
+      ],
+
+      "raid-root-of-nightmares-head": [
+        {
+          "type": "item",
+          "itemHash": 3475635982
+        },
+        {
+          "type": "item",
+          "itemHash": 3810243376
+        },
+
+        {
+          "type": "item",
+          "itemHash": 4123705451
+        }
+      ],
+      "raid-root-of-nightmares-arms": [
+        {
+          "type": "item",
+          "itemHash": 630432767
+        },
+        {
+          "type": "item",
+          "itemHash": 3608027009
+        },
+
+        {
+          "type": "item",
+          "itemHash": 2445962586
+        }
+      ],
+      "raid-root-of-nightmares-chest": [
+        {
+          "type": "item",
+          "itemHash": 824228793
+        },
+        {
+          "type": "item",
+          "itemHash": 2787963735
+        },
+
+        {
+          "type": "item",
+          "itemHash": 2597227950
+        }
+      ],
+      "raid-root-of-nightmares-legs": [
+        {
+          "type": "item",
+          "itemHash": 3846650177
+        },
+        {
+          "type": "item",
+          "itemHash": 807905267
+        },
+        {
+          "type": "item",
+          "itemHash": 3702434452
+        }
+      ],
+      "raid-root-of-nightmares-class": [
+        {
+          "type": "item",
+          "itemHash": 2138394740
+        },
+        {
+          "type": "item",
+          "itemHash": 621315878
+        },
+        {
+          "type": "item",
+          "itemHash": 2915322487
+        }
+      ],
+
+      "raid-crotas-end-head": [
+        {
+          "type": "item",
+          "itemHash": 1328334240
+        },
+        {
+          "type": "item",
+          "itemHash": 859929450
+        },
+
+        {
+          "type": "item",
+          "itemHash": 1964816829
+        }
+      ],
+      "raid-crotas-end-arms": [
+        {
+          "type": "item",
+          "itemHash": 3189374833
+        },
+        {
+          "type": "item",
+          "itemHash": 441033139
+        },
+
+        {
+          "type": "item",
+          "itemHash": 427348780
+        }
+      ],
+      "raid-crotas-end-chest": [
+        {
+          "type": "item",
+          "itemHash": 1261894567
+        },
+        {
+          "type": "item",
+          "itemHash": 3714937821
+        },
+
+        {
+          "type": "item",
+          "itemHash": 1386180724
+        }
+      ],
+      "raid-crotas-end-legs": [
+        {
+          "type": "item",
+          "itemHash": 3020524483
+        },
+        {
+          "type": "item",
+          "itemHash": 175883909
+        },
+        {
+          "type": "item",
+          "itemHash": 1497538390
+        }
+      ],
+      "raid-crotas-end-class": [
+        {
+          "type": "item",
+          "itemHash": 2401746614
+        },
+        {
+          "type": "item",
+          "itemHash": 1306415888
+        },
+        {
+          "type": "item",
+          "itemHash": 2130010697
+        }
+      ],
+
+      "raid-vault-of-glass-head": [
+        {
+          "type": "item",
+          "itemHash": 4029224226
+        },
+        {
+          "type": "item",
+          "itemHash": 586128500
+        },
+
+        {
+          "type": "item",
+          "itemHash": 673599343
+        }
+      ],
+      "raid-vault-of-glass-arms": [
+        {
+          "type": "item",
+          "itemHash": 3368765451
+        },
+        {
+          "type": "item",
+          "itemHash": 3753500813
+        },
+
+        {
+          "type": "item",
+          "itemHash": 3253292022
+        }
+      ],
+      "raid-vault-of-glass-chest": [
+        {
+          "type": "item",
+          "itemHash": 3890978501
+        },
+        {
+          "type": "item",
+          "itemHash": 1133961267
+        },
+
+        {
+          "type": "item",
+          "itemHash": 3029386938
+        }
+      ],
+      "raid-vault-of-glass-legs": [
+        {
+          "type": "item",
+          "itemHash": 123979037
+        },
+        {
+          "type": "item",
+          "itemHash": 129332559
+        },
+        {
+          "type": "item",
+          "itemHash": 170603856
+        }
+      ],
+      "raid-vault-of-glass-class": [
+        {
+          "type": "item",
+          "itemHash": 3012927512
+        },
+        {
+          "type": "item",
+          "itemHash": 3339387242
+        },
+        {
+          "type": "item",
+          "itemHash": 2253382795
+        }
+      ]
+    }
+  },
+  "doubleLootOverrides": ["dungeon-vespers-host"]
+}

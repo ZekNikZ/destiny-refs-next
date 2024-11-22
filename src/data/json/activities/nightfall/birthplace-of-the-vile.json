@@ -1,0 +1,10 @@
+{
+  "$schema": "../../schema/activity.json",
+  "activity": {
+    "id": "nightfall-birthplace-of-the-vile",
+    "type": "nightfall",
+    "name": "Birthplace of the Vile",
+    "backgroundImage": "/images/nightfalls/birthplace-of-the-vile.avif",
+    "championTypes": ["overload", "unstoppable"]
+  }
+}

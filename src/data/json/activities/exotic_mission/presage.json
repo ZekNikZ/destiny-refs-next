@@ -1,0 +1,82 @@
+{
+  "$schema": "../../schema/activity.json",
+  "activity": {
+    "id": "exotic_mission-presage",
+    "type": "exotic_mission",
+    "name": "Presage",
+    "description": "Jump coordinates matching an errant distress signal.",
+    "backgroundImage": "/images/exotic_missions/presage.avif",
+    "loot": [
+      {
+        "type": "mode_specific",
+        "modes": [
+          {
+            "mode": "Normal",
+            "bungieActivityHash": 0,
+            "children": [
+              { "type": "ref-loot-pool", "key": "exotic_mission-presage-exotic" },
+              { "type": "ref-loot-pool", "key": "exotic_mission-presage-loot" },
+              {
+                "type": "ref-loot-pool",
+                "key": "exotic_mission-presage-deepsight-weapons"
+              },
+              {
+                "type": "ref-loot-pool",
+                "key": "exotic_mission-presage-armor"
+              },
+              {
+                "type": "ref-loot-pool",
+                "key": "exotic_mission-presage-intrinsics"
+              }
+            ]
+          },
+          {
+            "mode": "Expert",
+            "bungieActivityHash": 0,
+            "children": [
+              { "type": "ref-loot-pool", "key": "exotic_mission-presage-exotic" },
+              { "type": "ref-loot-pool", "key": "exotic_mission-presage-loot" },
+              {
+                "type": "ref-loot-pool",
+                "key": "exotic_mission-presage-deepsight-weapons"
+              },
+              {
+                "type": "ref-loot-pool",
+                "key": "exotic_mission-presage-armor"
+              },
+              {
+                "type": "ref-loot-pool",
+                "key": "exotic_mission-presage-intrinsics"
+              },
+              {
+                "type": "ref-loot-pool",
+                "key": "exotic_mission-presage-catalysts"
+              }
+            ]
+          },
+          {
+            "mode": "Weekly Challenge Completion: 2 Clears Regardless of",
+            "bungieActivityHash": 0,
+            "children": [
+              {
+                "type": "ref-loot-pool",
+                "key": "exotic_mission-rotator-challenge",
+                "loot": [
+                  {
+                    "type": "ref-loot-set",
+                    "key": "exotic_mission-presage-deepsight-weapons",
+                    "deepsight": "guaranteed-deepsight"
+                  },
+                  {
+                    "type": "ref-loot-set",
+                    "key": "exotic_mission-presage-armor"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

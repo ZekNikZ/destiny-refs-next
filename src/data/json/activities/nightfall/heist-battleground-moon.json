@@ -1,0 +1,10 @@
+{
+  "$schema": "../../schema/activity.json",
+  "activity": {
+    "id": "nightfall-heist-battleground-moon",
+    "type": "nightfall",
+    "name": "Heist Battleground: Moon",
+    "backgroundImage": "/images/nightfalls/heist-battleground-moon.avif",
+    "championTypes": ["barrier", "unstoppable"]
+  }
+}
