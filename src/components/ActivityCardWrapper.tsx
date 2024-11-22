@@ -25,7 +25,6 @@ export default function ActivityCardWrapper(props: Props) {
       }}
       availability={availability}
       forceState="summary"
-      style={{ height: "100%" }}
       link={!props.disableLink ? link : undefined}
     />
   );

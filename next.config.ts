@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["@mantine/core", "@mantine/hooks", "@mui/lab", "@mui/material"],
   },
+  sassOptions: {
+    silenceDeprecations: ["legacy-js-api"],
+  },
   // TODO: undo
   eslint: {
     ignoreDuringBuilds: true,

@@ -12,8 +12,7 @@ interface Props {
 export default function GlobalDataClientLoader({ data, children }: Props) {
   useEffect(() => {
     useGlobalData.setState(data);
-    console.log(data);
-  }, []);
+  }, [data]);
 
   return children;
 }

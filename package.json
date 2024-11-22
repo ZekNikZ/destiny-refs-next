@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "serve": "serve out"
   },
   "dependencies": {
     "@emotion/cache": "^11.13.5",
@@ -47,6 +48,7 @@
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.3.3",
     "sass": "^1.81.0",
+    "serve": "^14.2.4",
     "typescript": "^5"
   }
 }

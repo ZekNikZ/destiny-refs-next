@@ -7,6 +7,8 @@ import { ColorSchemeScript } from "@mantine/core";
 import Providers from "./providers";
 import { Bebas_Neue } from "next/font/google";
 import GlobalDataLoader from "@/data/GlobalDataLoader";
+import { getAllData } from "@/data/data-fetchers";
+import { getRoutes } from "@/utils/routes";
 
 const bebasNeueFont = Bebas_Neue({
   subsets: ["latin"],
@@ -20,11 +22,14 @@ export const metadata: Metadata = {
   icons: ["/destiny.svg"],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { activities } = await getAllData();
+  const routes = getRoutes(activities);
+
   return (
     <html lang="en" className={bebasNeueFont.className} suppressHydrationWarning>
       <head>
@@ -33,7 +38,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <GlobalDataLoader>
-            <Layout>{children}</Layout>
+            <Layout routes={routes}>{children}</Layout>
           </GlobalDataLoader>
         </Providers>
       </body>

@@ -46,7 +46,7 @@ export default async function TodayPageDisplay(props: Props) {
     .filter((x) => !!x);
 
   return (
-    <Stack mt="md">
+    <Stack mb="md">
       <Title order={2} size="h2">
         {props.title}
       </Title>

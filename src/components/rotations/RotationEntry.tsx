@@ -1,29 +1,22 @@
 import { Group, Title, Text, Image } from "@mantine/core";
-import { useGlobalData } from "@/data/useGlobalData";
 import classes from "./RotationEntry.module.scss";
 import { makeRouteFromActivity } from "@/utils/routes";
 import { Dayjs } from "dayjs";
 import clsx from "clsx";
-import { Loot } from "@/data/types";
+import { Activity, Loot } from "@/data/types";
 import LootIcon from "../loot/LootIcon";
 import { getLootKey } from "@/utils/loot";
 import Link from "next/link";
 
 interface Props {
   date?: Dayjs;
-  activityIds: string[];
+  activities: Activity[];
   big?: boolean;
   loot?: Loot[];
   noLink?: boolean;
 }
 
 export default function RotationEntry(props: Props) {
-  const globalData = useGlobalData();
-
-  const activities = props.activityIds.map((activityId) =>
-    globalData.activities.find((activity) => activity.id === activityId)
-  );
-
   return (
     <Group
       gap={0}
@@ -38,7 +31,7 @@ export default function RotationEntry(props: Props) {
         </Text>
       )}
       <Group gap={0} style={{ flexGrow: 1, flexBasis: "150px" }}>
-        {activities
+        {props.activities
           .filter((a) => !!a)
           .map((activity) => {
             const inside = (

@@ -1,9 +1,9 @@
-import { activityTypes } from "@/utils/routes";
-import TodayPageDisplay from "../components/TodayPageDisplay";
-import { Group, Stack } from "@mantine/core";
-import Countdown from "../components/Countdown";
-import { Masonry } from "@mui/lab";
 import { getAllData } from "@/data/data-fetchers";
+import Countdown from "@/components/Countdown";
+import TodayPageDisplay from "@/components/TodayPageDisplay";
+import { activityTypes } from "@/utils/routes";
+import { Group, Stack } from "@mantine/core";
+import { Masonry } from "@mui/lab";
 
 export default async function HomePage() {
   const { rotations } = await getAllData();
@@ -14,7 +14,15 @@ export default async function HomePage() {
         <Countdown title="Weekly Reset" to="weekly-reset" />
         <Countdown title="Daily Reset" to="daily-reset" />
       </Group>
-      <Masonry columns={2} spacing="16px" suppressHydrationWarning>
+      <Masonry
+        columns={{ xs: 1, lg: 2, xl: 3 }}
+        spacing={2}
+        suppressHydrationWarning
+        defaultColumns={3}
+        defaultHeight={2000}
+        defaultSpacing={2}
+        style={{ marginBottom: "-16px", marginRight: "-8px", width: "auto" }}
+      >
         {activityTypes.map((activityType) => (
           <TodayPageDisplay
             key={activityType.type}

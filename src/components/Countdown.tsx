@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, Stack, Text, Title } from "@mantine/core";
-import dayjs, { Dayjs } from "dayjs";
+import dayjs from "dayjs";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 interface Props {
@@ -40,7 +40,7 @@ export default function Countdown(props: Props) {
     return () => {
       clearInterval(intervalRef.current);
     };
-  }, []);
+  }, [to]);
 
   return (
     <Card
@@ -54,7 +54,7 @@ export default function Countdown(props: Props) {
         <Title order={3} size="h3" ta="center">
           {props.title}
         </Title>
-        <Text fw="bold">{timeString}</Text>
+        <Text fw="bold">{timeString || "Loading..."}</Text>
       </Stack>
     </Card>
   );

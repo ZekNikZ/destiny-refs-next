@@ -2,17 +2,18 @@
 
 import { useDisclosure } from "@mantine/hooks";
 import { useAsideComponentContext } from "./AsideComponentContext";
-import routes from "@/utils/routes";
 import { AppShell, Group, Burger, ActionIcon, ScrollArea, Text } from "@mantine/core";
 import { GithubLogo } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import NavLinkWithChildren from "./NavLinkWithChildren";
+import { RouteData } from "@/utils/routes";
 
 interface Props {
+  routes: RouteData[];
   children: React.ReactNode;
 }
 
-export default function Layout({ children }: Props) {
+export default function Layout({ routes, children }: Props) {
   const [opened, { toggle, close }] = useDisclosure();
 
   const { asideComponent } = useAsideComponentContext();

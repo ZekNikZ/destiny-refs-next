@@ -1,16 +1,22 @@
+"use client";
+
 import { Box, Stack, Title } from "@mantine/core";
-import { ActivityRotation } from "@/data/types";
+import { Activity, ActivityRotation } from "@/data/types";
 import RotationEntry from "./RotationEntry";
 import dayjs from "dayjs";
 import { rotateArray } from "@/utils/arrays";
 
 interface Props {
   rotation: ActivityRotation;
+  activities: Activity[];
 }
 
 export default function ActivityRotationDisplay(props: Props) {
-  //   const noLinks = !!activityTypes.find((type) => type.type === props.rotation.activityType)
-  //     ?.disableLinks;
+  function getActivitiesFromIds(activityIds: string[]): Activity[] {
+    return activityIds
+      .map((activityId) => props.activities.find((x) => x.id === activityId))
+      .filter((x) => !!x);
+  }
 
   switch (props.rotation.type) {
     case "weekly":
@@ -39,17 +45,16 @@ export default function ActivityRotationDisplay(props: Props) {
             {props.rotation.name}
           </Title>
           <Stack gap={0}>
-            {rotation.map((activities, index) => {
+            {rotation.map((activityIds, index) => {
               return (
                 <RotationEntry
-                  key={activities.join("|") + index}
+                  key={activityIds.join("|") + index}
                   date={startDate.add(
                     index + startIndex,
                     props.rotation.type === "weekly" ? "weeks" : "days"
                   )}
-                  activityIds={activities}
+                  activities={getActivitiesFromIds(activityIds)}
                   loot={lootRotation ? lootRotation[index % lootRotation.length] : undefined}
-                  //   noLink={noLinks}
                 />
               );
             })}
@@ -63,7 +68,7 @@ export default function ActivityRotationDisplay(props: Props) {
             {props.rotation.name}
           </Title>
           <Box>
-            <RotationEntry activityIds={[props.rotation.activityId]} big />
+            <RotationEntry activities={getActivitiesFromIds([props.rotation.activityId])} big />
           </Box>
         </Stack>
       );

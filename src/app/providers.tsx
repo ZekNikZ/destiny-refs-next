@@ -2,9 +2,9 @@
 
 import { AsideComponentProvider } from "@/components/AsideComponentContext";
 import { useGlobalData } from "@/data/useGlobalData";
-import { createTheme, MantineProvider } from "@mantine/core";
+import { MantineProvider } from "@mantine/core";
 import { createSyncStoragePersister } from "@tanstack/query-sync-storage-persister";
-import { QueryClient, QueryCache, isServer, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient, QueryCache, isServer } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Persister, PersistQueryClientProvider } from "@tanstack/react-query-persist-client";
 import dayjs from "dayjs";

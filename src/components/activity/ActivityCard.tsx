@@ -266,7 +266,7 @@ export default function ActivityCard(props: Props) {
             {props.activity.extraSections
               ?.filter((s) => !s.hidden)
               .map((section) => {
-                // @ts-ignore-next-line
+                // @ts-expect-error allow phosphor icons to be dynamic
                 const Icon = Icons[section.phosphorIconName] ?? Question;
                 return (
                   <Accordion.Item key={section.id} value={section.name}>

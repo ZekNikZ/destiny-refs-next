@@ -1,6 +1,5 @@
 import BungiePresentationNodeIcon from "@/components/BungiePresentationNodeIcon";
 import { Activity, ActivityType } from "@/data/types";
-import { useGlobalData } from "@/data/useGlobalData";
 import { type Icon } from "@phosphor-icons/react";
 import {
   ArrowClockwise,
@@ -82,92 +81,91 @@ export function makeRouteFromActivity(activity: Activity) {
   }
 }
 
-const routes: RouteData[] = [
-  {
-    path: "/",
-    title: "Today",
-    navbarProperties: {
-      icon: makePhosphorIcon(Calendar),
-    },
-  },
-  {
-    path: "/rotations",
-    title: "Rotations",
-    navbarProperties: {
-      icon: makePhosphorIcon(ArrowClockwise),
-    },
-  },
-  {
-    path: "/info",
-    title: "Loot & Details",
-    navbarProperties: {
-      icon: makePhosphorIcon(TreasureChest),
-    },
-    children: activityTypes.map((activityType) => ({
-      path: `/info/${activityType.type}s`,
-      title: activityType.title,
+export function getRoutes(activities: Activity[]): RouteData[] {
+  return [
+    {
+      path: "/",
+      title: "Today",
       navbarProperties: {
-        icon: <BungiePresentationNodeIcon hash={activityType.presentationNodeHash} />,
+        icon: makePhosphorIcon(Calendar),
       },
-      children: !activityType.disableLinks
-        ? useGlobalData
-            .getState()
-            .activities.filter((activity) => activity.type === activityType.type)
-            .map((activity) => ({
-              path: makeRouteFromActivity(activity),
-              title: activity.name,
-            }))
-        : undefined,
-    })),
-  },
-  {
-    path: "/tools",
-    title: "Tools",
-    navbarProperties: {
-      icon: makePhosphorIcon(Toolbox),
     },
-    children: [
-      {
-        path: "/tools/vow-chest",
-        title: "VOTD Deepsight Puzzle",
-        navbarProperties: {
-          hidden: true,
-        },
+    {
+      path: "/rotations",
+      title: "Rotations",
+      navbarProperties: {
+        icon: makePhosphorIcon(ArrowClockwise),
       },
-      {
-        path: "/tools/kf-chest",
-        title: "KF Deepsight Puzzle",
-        navbarProperties: {
-          hidden: true,
-        },
-      },
-      {
-        path: "/tools/se-verity",
-        title: "SE Verity Helper",
-      },
-      {
-        path: "/tools/raid-summary",
-        title: "Fireteam Raid Summary",
-        navbarProperties: {
-          beta: true,
-        },
-      },
-    ],
-  },
-  {
-    path: "/contact",
-    title: "Contact",
-    navbarProperties: {
-      icon: makePhosphorIcon(Info),
     },
-  },
-  {
-    path: "/settings",
-    title: "Settings",
-    navbarProperties: {
-      icon: makePhosphorIcon(Gear),
+    {
+      path: "/info",
+      title: "Loot & Details",
+      navbarProperties: {
+        icon: makePhosphorIcon(TreasureChest),
+      },
+      children: activityTypes.map((activityType) => ({
+        path: `/info/${activityType.type}s`,
+        title: activityType.title,
+        navbarProperties: {
+          icon: <BungiePresentationNodeIcon hash={activityType.presentationNodeHash} />,
+        },
+        children: !activityType.disableLinks
+          ? activities
+              .filter((activity) => activity.type === activityType.type)
+              .map((activity) => ({
+                path: makeRouteFromActivity(activity),
+                title: activity.name,
+              }))
+          : undefined,
+      })),
     },
-  },
-];
-
-export default routes;
+    {
+      path: "/tools",
+      title: "Tools",
+      navbarProperties: {
+        icon: makePhosphorIcon(Toolbox),
+      },
+      children: [
+        {
+          path: "/tools/vow-chest",
+          title: "VOTD Deepsight Puzzle",
+          navbarProperties: {
+            hidden: true,
+          },
+        },
+        {
+          path: "/tools/kf-chest",
+          title: "KF Deepsight Puzzle",
+          navbarProperties: {
+            hidden: true,
+          },
+        },
+        {
+          path: "/tools/se-verity",
+          title: "SE Verity Helper",
+        },
+        {
+          path: "/tools/raid-summary",
+          title: "Fireteam Raid Summary",
+          navbarProperties: {
+            beta: true,
+          },
+        },
+      ],
+    },
+    {
+      path: "/contact",
+      title: "Contact",
+      navbarProperties: {
+        icon: makePhosphorIcon(Info),
+      },
+    },
+    {
+      path: "/settings",
+      title: "Settings",
+      navbarProperties: {
+        icon: makePhosphorIcon(Gear),
+      },
+    },
+  ];
+}

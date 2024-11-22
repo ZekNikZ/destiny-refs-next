@@ -40,11 +40,13 @@ export default function LootItemIcon(props: Props) {
       <Image
         src={isSuccess ? `https://bungie.net/${item?.displayProperties.icon}` : null}
         fallbackSrc="/icons/loot/loading.gif"
+        alt={item?.displayProperties.name ?? "Loading..."}
       />
       {item?.iconWatermark && (
         <Image
           src={`https://bungie.net/${item.iconWatermark}`}
           style={{ position: "absolute", left: 0, top: 0 }}
+          alt={`${item?.displayProperties.name} overlay`}
         />
       )}
       {!props.hideArtiface && props.loot.artiface && (
@@ -53,6 +55,7 @@ export default function LootItemIcon(props: Props) {
           h="30%"
           w="30%"
           style={{ position: "absolute", right: 2, top: 2 }}
+          alt="Artiface"
         />
       )}
       {!props.hideQuantity && props.loot.quantity && props.loot.quantity > 1 && (
